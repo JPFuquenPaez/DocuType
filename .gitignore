@@ -1,0 +1,35 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# Ruff, pytest, mypy caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# Test and app __pycache__ folders
+app/__pycache__/
+app/inference/__pycache__/
+tests/__pycache__/
+
+# Data and artifacts (do not track datasets or generated images)
+app/data/datasets/handwritten-text-images/
+app/data/datasets/printed-handwritten-text-images/
+app/training/images/
+
+# MLflow runs and artifacts
+app/training/mlruns/
+
+# Ignore specific notebook
+app/inference/inference.ipynb
+
+# System files
+.DS_Store

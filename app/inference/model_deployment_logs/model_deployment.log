@@ -1,0 +1,16 @@
+2025-06-03 10:42:40,318 - INFO - 
+Deployment Summary:
+2025-06-03 10:42:40,318 - INFO - Model Name: Global_Best_Model
+2025-06-03 10:42:40,318 - INFO - Production Versions: [21]
+2025-06-03 10:42:40,318 - INFO - Source Experiment: MobileNetV2_fine_tuning (685928091980010206)
+2025-06-03 10:42:40,318 - INFO - Run ID: 277a2921a6fd4e5ab07d0e5f49f68bff
+2025-06-03 10:42:40,318 - INFO - Tracking URI: ./app/training/mlruns
+2025-06-03 10:42:40,318 - INFO - Model URIs: ['runs:/277a2921a6fd4e5ab07d0e5f49f68bff/model']
+2025-06-03 10:49:43,464 - INFO - 
+Deployment Summary:
+2025-06-03 10:49:43,465 - INFO - Model Name: Global_Best_Model
+2025-06-03 10:49:43,465 - INFO - Production Versions: [22]
+2025-06-03 10:49:43,465 - INFO - Source Experiment: MobileNetV2_fine_tuning (685928091980010206)
+2025-06-03 10:49:43,465 - INFO - Run ID: 277a2921a6fd4e5ab07d0e5f49f68bff
+2025-06-03 10:49:43,465 - INFO - Tracking URI: ./app/training/mlruns
+2025-06-03 10:49:43,465 - INFO - Model URIs: ['runs:/277a2921a6fd4e5ab07d0e5f49f68bff/model']

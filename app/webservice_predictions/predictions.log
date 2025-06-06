@@ -1,0 +1,70 @@
+2025-06-03 11:12:52,106 - webserviceapp - INFO - Creating FastAPI application. Debug: True, Title: Image Classification API, Version: 1.0.0, Log Level: DEBUG
+2025-06-03 11:12:52,107 - webserviceapp - INFO - FastAPI application created and configured.
+2025-06-03 11:12:52,109 - webserviceapp - INFO - FastAPI application startup: Initializing ModelPredictorONNX...
+2025-06-03 11:12:52,110 - webserviceapp - INFO - Loading MLflow model and associated transforms...
+2025-06-03 11:12:58,622 - webserviceapp - INFO - Model and transforms loaded successfully. Model Version: 22, Info: N/A
+2025-06-03 11:13:04,365 - python_multipart.multipart - DEBUG - Calling on_part_begin with no data
+2025-06-03 11:13:04,366 - python_multipart.multipart - DEBUG - Calling on_header_field with data[42:61]
+2025-06-03 11:13:04,366 - python_multipart.multipart - DEBUG - Calling on_header_value with data[63:114]
+2025-06-03 11:13:04,366 - python_multipart.multipart - DEBUG - Calling on_header_end with no data
+2025-06-03 11:13:04,367 - python_multipart.multipart - DEBUG - Calling on_header_field with data[116:128]
+2025-06-03 11:13:04,367 - python_multipart.multipart - DEBUG - Calling on_header_value with data[130:139]
+2025-06-03 11:13:04,368 - python_multipart.multipart - DEBUG - Calling on_header_end with no data
+2025-06-03 11:13:04,368 - python_multipart.multipart - DEBUG - Calling on_headers_finished with no data
+2025-06-03 11:13:04,368 - python_multipart.multipart - DEBUG - Calling on_part_data with data[143:56392]
+2025-06-03 11:13:04,370 - python_multipart.multipart - DEBUG - Calling on_part_data with data[0:80965]
+2025-06-03 11:13:04,370 - python_multipart.multipart - DEBUG - Calling on_part_end with no data
+2025-06-03 11:13:04,370 - python_multipart.multipart - DEBUG - Calling on_end with no data
+2025-06-03 11:13:04,372 - webserviceapp - INFO - Prediction request received for image: 'test_00004_0.png'
+2025-06-03 11:13:04,373 - webserviceapp - DEBUG - Image 'test_00004_0.png' read successfully. Size: 137214 bytes. Starting inference.
+2025-06-03 11:13:04,416 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-06-03 11:13:04,416 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 41 65536
+2025-06-03 11:13:04,548 - webserviceapp - INFO - Inference successful for 'test_00004_0.png': Predicted Class='handwritten', Confidence=0.7988, Model Version='22', Model Info='Alias: prod'
+2025-06-03 13:48:35,865 - webserviceapp - INFO - Creating FastAPI application. Debug: False, Title: Image Classification API, Version: 1.0.0, Log Level: INFO
+2025-06-03 13:48:35,867 - webserviceapp - INFO - FastAPI application created and configured.
+2025-06-03 13:48:35,870 - webserviceapp - INFO - FastAPI application startup: Initializing ModelPredictorONNX...
+2025-06-03 13:48:35,870 - webserviceapp - INFO - Loading MLflow model and associated transforms...
+2025-06-03 13:48:41,855 - webserviceapp - INFO - Model and transforms loaded successfully. Model Version: 22, Info: N/A
+2025-06-03 13:50:35,179 - webserviceapp - INFO - Prediction request received for image: 'test_00007_0.png'
+2025-06-03 13:50:35,396 - webserviceapp - INFO - Inference successful for 'test_00007_0.png': Predicted Class='handwritten', Confidence=0.6906, Model Version='22', Model Info='Alias: prod'
+2025-06-03 16:51:10,136 - webserviceapp - INFO - Creating FastAPI application. Debug: False, Title: Image Classification API, Version: 1.0.0, Log Level: INFO
+2025-06-03 16:51:10,138 - webserviceapp - INFO - FastAPI application created and configured.
+2025-06-03 16:51:10,140 - webserviceapp - INFO - FastAPI application startup: Initializing ModelPredictorONNX...
+2025-06-03 16:51:10,140 - webserviceapp - INFO - Loading MLflow model and associated transforms...
+2025-06-03 16:51:16,029 - webserviceapp - INFO - Model and transforms loaded successfully. Model Version: 22, Info: Alias: prod
+2025-06-03 17:02:29,109 - webserviceapp - INFO - Prediction request received for image: 'test_00000_0.png'
+2025-06-03 17:02:29,331 - webserviceapp - INFO - Inference successful for 'test_00000_0.png': Predicted Class='handwritten', Confidence=0.7696, Model Version='22', Model Info='Alias: prod'
+2025-06-03 17:03:06,704 - webserviceapp - INFO - Prediction request received for image: 'Screenshot 2025-05-25 at 16.44.12.png'
+2025-06-03 17:03:06,833 - webserviceapp - INFO - Inference successful for 'Screenshot 2025-05-25 at 16.44.12.png': Predicted Class='handwritten', Confidence=0.7838, Model Version='22', Model Info='Alias: prod'
+2025-06-03 17:03:37,690 - webserviceapp - INFO - Prediction request received for image: 'Screenshot 2025-05-25 at 16.44.12.png'
+2025-06-03 17:03:37,801 - webserviceapp - INFO - Inference successful for 'Screenshot 2025-05-25 at 16.44.12.png': Predicted Class='handwritten', Confidence=0.7838, Model Version='22', Model Info='Alias: prod'
+2025-06-03 17:04:08,417 - webserviceapp - INFO - Prediction request received for image: 'Screenshot 2025-05-25 at 23.50.06.png'
+2025-06-03 17:04:08,530 - webserviceapp - INFO - Inference successful for 'Screenshot 2025-05-25 at 23.50.06.png': Predicted Class='printed', Confidence=0.7585, Model Version='22', Model Info='Alias: prod'
+2025-06-03 17:38:32,450 - webserviceapp - INFO - Prediction request received for image: 'test_00001_0.png'
+2025-06-03 17:38:32,593 - webserviceapp - INFO - Inference successful for 'test_00001_0.png': Predicted Class='handwritten', Confidence=0.7374, Model Version='22', Model Info='Alias: prod'
+2025-06-04 11:48:09,183 - webserviceapp - INFO - Creating FastAPI application. Debug: False, Title: Image Classification API, Version: 1.0.0, Log Level: INFO
+2025-06-04 11:48:09,185 - webserviceapp - INFO - FastAPI application created and configured.
+2025-06-04 11:48:09,187 - webserviceapp - INFO - FastAPI application startup: Initializing ModelPredictorONNX...
+2025-06-04 11:48:09,188 - webserviceapp - INFO - Loading MLflow model and associated transforms...
+2025-06-04 11:48:15,246 - webserviceapp - INFO - Model and transforms loaded successfully. Model Version: 22, Info: Alias: prod
+2025-06-04 12:25:51,549 - webserviceapp - INFO - Prediction request received for image: 'Screenshot 2025-05-25 at 16.44.12.png'
+2025-06-04 12:25:51,772 - webserviceapp - INFO - Inference successful for 'Screenshot 2025-05-25 at 16.44.12.png': Predicted Class='handwritten', Confidence=0.7838, Model Version='22', Model Info='Alias: prod'
+2025-06-04 12:26:05,207 - webserviceapp - INFO - Prediction request received for image: '2505.03335v2.pdf'
+2025-06-04 12:26:05,290 - webserviceapp - ERROR - Unexpected error during prediction for '2505.03335v2.pdf': Prediction failed: cannot identify image file <_io.BytesIO object at 0x7ffecbf0aa70>
+Traceback (most recent call last):
+  File "/application/app/inference/inference_onnx.py", line 217, in predict_from_bytes
+    image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+  File "/usr/local/lib/python3.10/site-packages/PIL/Image.py", line 3572, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7ffecbf0aa70>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/application/app/webservice.py", line 356, in predict_image_endpoint
+    prediction_result = image_classifier.predict_from_bytes(
+  File "/application/app/inference/inference_onnx.py", line 248, in predict_from_bytes
+    raise RuntimeError(f"Prediction failed: {str(e)}") from e
+RuntimeError: Prediction failed: cannot identify image file <_io.BytesIO object at 0x7ffecbf0aa70>
+2025-06-04 12:26:25,528 - webserviceapp - INFO - Prediction request received for image: 'test_00009_0.png'
+2025-06-04 12:26:25,649 - webserviceapp - INFO - Inference successful for 'test_00009_0.png': Predicted Class='handwritten', Confidence=0.9962, Model Version='22', Model Info='Alias: prod'

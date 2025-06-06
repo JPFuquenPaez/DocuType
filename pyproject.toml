@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "test-technique"
+version = "0.1.0"
+description = ""
+authors = ["Quicksign"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+ipykernel = "^6.29.5"
+datasets = "^3.6.0"
+jupyter = "^1.1.1"
+ipywidgets = "^8.1.7"
+pillow = "^11.2.1"
+torch = "^2.7.0"
+torchvision = "^0.22.0"
+torchaudio = "^2.7.0"
+matplotlib = "^3.10.3"
+mlflow = "^2.22.0"
+seaborn = "^0.13.2"
+evaluate = "^0.4.3"
+onnx = "^1.18.0"
+onnxruntime = "^1.22.0"
+captum = "^0.8.0"
+python-multipart = "^0.0.20"
+ruff = "^0.11.12"
+mypy = "^1.16.0"
+pydantic-settings = "^2.9.1"
+mkdocs = "^1.6.1"
+pydantic = "^2.11.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^6.1.1"
+
+[poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+httpx = "*"
+ruff= "*"
+mypy = "*"
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 99
+omit = ["**/tests/test_*.py","app/main.py"]
+
+[tool.mypy]
+python_version = "3.10"
+namespace_packages = true
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 82
+extend-exclude = ["*.ipynb"] # exluding jupyters
+
+[tool.ruff.lint]
+select = [
+  "F",
+  "E",
+  "D",
+  "I"
+]
+ignore = [
+  "E501"
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov=app --cov-report=term-missing"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+
+[tools.poetry.dev]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "9000:9000"
+    platform: "linux/amd64" #"linux/arm64" #forcing AMD intel chip image.. so need apple silicon
+    volumes: 
+      - ./app/training/mlruns:./app/training/mlruns
+      - ./app/webservice_predictions:./app/webservice_predictions
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/training/mlruns
